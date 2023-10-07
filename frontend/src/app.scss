@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Inter Tight:700|Inter:400');
+// @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*
+* {
+    font-family: 'Comic Neue', sans-serif!important;
+}
+*/
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+    @apply bg-background;
+    @apply text-text;
+    @apply min-h-screen;
+    @apply flex;
+    @apply flex-col;
+    @apply align-middle;
+    @apply justify-center;
+}
+
+h1, h2, h3, h4, h5, button {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 7.595rem; /* 121.44px */
+}
+
+h2 {
+    font-size: 5.063rem; /* 80.96px */
+}
+
+h3 {
+    font-size: 3.375rem; /* 54.08px */
+}
+
+h4 {
+    font-size: 2.250rem; /* 36px */
+}
+
+h5 {
+    font-size: 1.500rem; /* 24px */
+}
+
+small {
+    font-size: 0.667rem; /* 10.72px */
+}
+
+span.name {
+    background: rgb(55,68,34);
+    background: linear-gradient(180deg, rgba(55,68,34,1) 0%, rgba(110,137,67,1) 40%, rgba(161,188,118,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+section {
+    @apply p-28;
+}
+
+.note-content {
+    p, pre {
+        font-size: 1.5rem;
+    }
+
+    katex > * {
+        font-size: 2rem;
+    }
+}
